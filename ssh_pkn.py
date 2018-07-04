@@ -229,6 +229,7 @@ from ansible.module_utils._text import to_bytes, to_native, to_text
 from ansible.module_utils.parsing.convert_bool import BOOLEANS, boolean
 from ansible.plugins.connection.ssh import Connection as ConnectionSSH
 from ansible.utils.path import unfrackpath, makedirs_safe
+from socket import create_connection
 
 try:
     from __main__ import display
